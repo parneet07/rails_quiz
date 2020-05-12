@@ -1,0 +1,9 @@
+<h1>All Tweets</h1>
+ 
+<% @tweets.each do |tweet|  %>
+  <div>
+    <h2><%= link_to tweet.title, tweet_path(tweet) %></h2>
+    <p><%= tweet.tweet %></p>
+    <hr>
+  </div>
+<% end %>
